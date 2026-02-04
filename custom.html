@@ -1,1 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Orders - Farmhouse Freshies</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Custom Orders 💜</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="custom.html">Custom Orders</a>
+    </nav>
+  </header>
 
+  <main>
+    <section class="custom-order">
+      <h2>Make Your Own Freshie</h2>
+      <p>Choose your colors, shapes, and fun phrases!</p>
+      <form onsubmit="submitCustomOrder(event)">
+        <label>Name for your freshie:</label>
+        <input type="text" id="customName" required>
+        <label>Choose scent:</label>
+        <select id="customScent">
+          <option value="Lavender">Lavender</option>
+          <option value="Vanilla">Vanilla</option>
+          <option value="Citrus">Citrus</option>
+        </select>
+        <button type="submit">Submit Order</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Farmhouse Freshies</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
